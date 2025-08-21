@@ -1,12 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import Timer from "./components/Timer";
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.container.text}>
-        Open up App.js to start working on your app!
-      </Text>
+      <Timer />
       <StatusBar style="auto" />
     </View>
   );
