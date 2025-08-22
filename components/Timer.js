@@ -34,8 +34,10 @@ const Timer = () => {
   const startTimer = () => {
     clearTimers();
     const now = Date.now();
-    startRef.current = Date.now() - 66400000;
-    setStartTime(Date.now() - 86400000);
+    // startRef.current = Date.now() - 66400000;
+    // setStartTime(Date.now() - 66400000);
+    startRef.current = Date.now();
+    setStartTime(Date.now());
     setElapsed(0);
     scheduleNextTick();
   };
